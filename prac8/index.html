@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="gymForm">
+    <h2>🏋️‍♂️ Gym Admission Form</h2>
+
+    <label>Full Name <span class="required">*</span></label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label>Email <span class="required">*</span></label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label>Phone Number <span class="required">*</span></label>
+    <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+    <label>Gender <span class="required">*</span></label>
+    <select id="gender" required>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label>Date of Birth <span class="required">*</span></label>
+    <input type="date" id="dob" required>
+
+    <label>Membership Type <span class="required">*</span></label>
+    <select id="membership" required>
+      <option value="">Select Membership</option>
+      <option>Monthly</option>
+      <option>Quarterly</option>
+      <option>Annual</option>
+    </select>
+
+    <label>Password <span class="required">*</span></label>
+    <input type="password" id="password" placeholder="Enter password" required>
+
+    <label>Confirm Password <span class="required">*</span></label>
+    <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+
+    <div class="checkbox">
+      <input type="checkbox" id="terms">
+      <label for="terms">I agree to the terms & conditions</label>
+    </div>
+
+    <button type="submit">Register</button>
+    <p id="message"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

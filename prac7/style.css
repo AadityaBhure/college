@@ -1,0 +1,105 @@
+/* 🌟 Compact Vibrant Form Theme 🌟 */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #5a4fcf, #00bcd4);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 30px;
+  width: 340px; /* smaller width */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #4a3fe5;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #333;
+  font-size: 13px;
+}
+
+input, select {
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px 8px; /* smaller padding */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a3fe5;
+  box-shadow: 0 0 6px rgba(74, 63, 229, 0.25);
+}
+
+.required {
+  color: #e63946;
+  margin-left: 3px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 6px;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #4a3fe5, #00bcd4);
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5e54ef, #00d0e8);
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+}
+
+input.highlight {
+  background-color: #eef7ff;
+  border-color: #2563eb;
+}

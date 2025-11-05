@@ -1,0 +1,93 @@
+/* 💪 Gym Admission Form Styling */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f72585, #7209b7);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  padding: 30px 35px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #7209b7;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #f72585;
+  box-shadow: 0 0 8px rgba(247, 37, 133, 0.3);
+  outline: none;
+}
+
+.required {
+  color: red;
+}
+
+.checkbox {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  background: linear-gradient(135deg, #f72585, #7209b7);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff4081, #7b2cbf);
+  box-shadow: 0 4px 12px rgba(247, 37, 133, 0.4);
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input.highlight {
+  background-color: #f0f8ff;
+  border-color: #4361ee;
+}

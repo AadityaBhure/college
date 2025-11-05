@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Schedule Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎟️ Event Schedule Planner</h1>
+    <p>Plan, manage, and book tickets for your favorite events!</p>
+  </header>
+
+  <main>
+    <section class="schedule-section">
+      <h2>📅 Upcoming Schedule</h2>
+      <table id="scheduleTable">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody"></tbody>
+      </table>
+
+      <button id="addEventBtn">➕ Add Event</button>
+    </section>
+
+    <section class="booking-section">
+      <h2>🎫 Book Your Ticket</h2>
+      <form id="bookingForm">
+        <label>Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label>Event:</label>
+        <select id="eventSelect">
+          <option value="Music Concert">Music Concert</option>
+          <option value="Tech Workshop">Tech Workshop</option>
+          <option value="Coding Hackathon">Coding Hackathon</option>
+          <option value="Art Exhibition">Art Exhibition</option>
+          <option value="Dance Night">Dance Night</option>
+        </select><br>
+
+        <label>Date:</label>
+        <input type="date" id="bookDate" required><br>
+
+        <label>Time:</label>
+        <input type="time" id="bookTime" required><br>
+
+        <label>Venue:</label>
+        <input type="text" id="bookVenue" placeholder="e.g., Auditorium" required><br>
+
+        <label>Tickets:</label>
+        <input type="number" id="tickets" min="1" required><br>
+
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="msg"></p>
+    </section>
+  </main>
+
+  <!-- Modal for adding custom events -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <h3>Add New Event</h3>
+      <label>Event Name:</label>
+      <input type="text" id="eventName"><br>
+
+      <label>Date:</label>
+      <input type="date" id="eventDate"><br>
+
+      <label>Time:</label>
+      <input type="time" id="eventTime"><br>
+
+      <label>Venue:</label>
+      <input type="text" id="eventVenue"><br>
+
+      <button id="saveEventBtn">Save</button>
+      <button id="closeModal">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
